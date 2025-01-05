@@ -6,11 +6,15 @@ from inference import predict_rag
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from utils.rag import RAG
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 app = FastAPI()
 
 origins = [
-    "http://localhost:5173"
+    os.getenv("FRONTEND_URL)
 ]
 
 app.add_middleware(
