@@ -1,0 +1,29 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+
+# Ignore in root directory
+.env
+*.log
+
+# Backend folder
+/backend/__pycache__/
+/backend/env/
+/backend/*.pyc
+
+# Frontend folder
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.cache/
+
+# Vite-specific ignores
+/frontend/public/*.svg # Ignore auto-generated assets in public
+/frontend/public/*.png
+
+# Ignore IDE or editor-specific files
+.idea/
+.vscode/
+*.iml
+
+# Ignore OS generated files
+*.swp
